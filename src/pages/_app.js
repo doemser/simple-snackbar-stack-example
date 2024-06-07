@@ -19,12 +19,12 @@ export default function App({ Component, pageProps }) {
           toast.id === id ? { ...toast, visible: false } : toast
         )
       );
-    }, 2500);
+    }, 4500);
 
     // Set timeout to remove toast after 3000ms
     setTimeout(() => {
       handleDeleteToast(id);
-    }, 3000);
+    }, 5000);
   }
 
   function handleDeleteToast(id) {
